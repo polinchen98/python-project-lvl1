@@ -1,5 +1,7 @@
+#!/usr/bin/env python
 import prompt
 from random import randint
+from brain_games.logic import welcome_user, make_check
 
 
 def is_even(digit):
@@ -9,25 +11,16 @@ def is_even(digit):
 
 
 def main():
-    print('Welcome to the Brain Games!')
-    name = prompt.string('May I have your name? ')
-    print('Hello,', name)
-    print('Answer "yes" if the number is even, otherwise answer "no".')
+    exercise = 'Answer "yes" if the number is even, otherwise answer "no".'
+    name = welcome_user(exercise)
+
     for i in range(3):
         digit = randint(1, 100)
         print('Question:', digit)
         answer = prompt.string('Your answer: ')
-        if answer == 'yes' or answer == 'no':
-            if is_even(digit) != answer:
-                print(answer, 'is wrong answer ;(. Correct answer was', is_even(digit))
-                print(f"Let's try again, {name}!'")
-                break
-            else:
-                print('Correct!')
-                if i == 2:
-                    print(f'Congratulations, {name}!')
+        right_answer = is_even(digit)
+        if make_check(name, answer, right_answer):
+            if i == 2:
+                print(f'Congratulations, {name}!')
         else:
-            print(answer, 'is wrong answer ;(. Correct answer was', is_even(digit))
-            print(f"Let's try again, {name}!'")
             break
-
