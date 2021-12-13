@@ -8,3 +8,7 @@
 
 ### start brain-calc
 [![asciicast](https://asciinema.org/a/Jlmfz2hHUNVVGyzkK9wmHpd4R.svg)](https://asciinema.org/a/Jlmfz2hHUNVVGyzkK9wmHpd4R)
+
+
+### start brain-gcd
+[![asciicast](https://asciinema.org/a/MjWB5ffEorZDkKi1NlniL00Ev.svg)](https://asciinema.org/a/MjWB5ffEorZDkKi1NlniL00Ev)
