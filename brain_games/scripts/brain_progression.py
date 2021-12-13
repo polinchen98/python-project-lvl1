@@ -9,11 +9,9 @@ def main():
     name = welcome_user(exercise)
 
     for i in range(3):
-
         progression, right_answer = make_progression()
         print('Question:', progression)
         answer = int(prompt.string('Your answer: '))
-
         if make_check(name, answer, right_answer):
             if i == 2:
                 print(f'Congratulations, {name}!')

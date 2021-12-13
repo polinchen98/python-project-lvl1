@@ -10,10 +10,8 @@ def main():
     name = welcome_user(exercise)
 
     for i in range(3):
-
         digit_1 = randint(1, 100)
         digit_2 = randint(1, 100)
-
         print('Question:', digit_1, digit_2)
         answer = int(prompt.string('Your answer: '))
         right_answer = find_gcd(digit_1, digit_2)
