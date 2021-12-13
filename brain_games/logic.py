@@ -1,14 +1,6 @@
 import prompt
 
 
-def game(description, iterate):
-    user_name = prompt.string('May I have your name? ')
-
-    print(description)
-
-    iterate(user_name)
-
-
 def welcome_user(exercise):
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')

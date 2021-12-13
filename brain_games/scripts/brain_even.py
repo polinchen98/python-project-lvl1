@@ -2,12 +2,7 @@
 import prompt
 from random import randint
 from brain_games.logic import welcome_user, make_check
-
-
-def is_even(digit):
-    if digit % 2 == 0:
-        return 'yes'
-    return 'no'
+from brain_games.games.even import is_even
 
 
 def main():
